@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function createRandomString(sumString){
+const alphabet = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
+var randomString = "";
+for (let i=0; i<sumString; i++){
+	var index = Math.floor(Math.random()*alphabet.length);
+	randomString +=alphabet[index];
+}
+return randomString;
+}
 
+
+function createRandomString2() {
+     const alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+     let num1 = Math.round(Math.random()*33);
+     let letter1 = alphabet[num1];
+
+    let num2 = Math.round(Math.random()*33);
+    let letter2 = alphabet[num2];
+
+    let num3 = Math.round(Math.random()*33);
+    let letter3 = alphabet[num3];
+
+    let num4 = Math.round(Math.random()*33);
+    let letter4 = alphabet[num4];
+
+    let word = letter1+letter2+letter3+letter4;
+
+     return word;
+ }
+ createRandomString2()
+
+
+console.log(createRandomString(4));
+
+console.log(createRandomString2());
+    </script>
+</body>
+</html>
